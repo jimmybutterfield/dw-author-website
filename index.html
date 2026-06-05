@@ -3,15 +3,15 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <!-- import fonts here -->
 
-    <title>Author Website</title>
+    <title>Jimmy Butterfield | Author Website</title>
     <link rel="stylesheet" href="./style.css" />
   </head>
-  
+
   <body>
-      <!-- menu header -->
+    <!-- menu header -->
     <div id="header-placeholder"></div>
+
     <!-- load header -->
     <script>
       fetch("header.html")
@@ -21,38 +21,41 @@
         });
     </script>
 
-    <div class="container">
-      <header>
-        <!-- edit author headshot below -->
-        <img
-          src="./img/headshot.jpg"
-          alt="Author Headshot"
-        />
+    <main class="container">
+      <header class="site-intro">
+        <img src="./img/headshot.jpg" alt="Headshot of Jimmy Butterfield" />
         <h1>Jimmy Butterfield</h1>
-        <p>Author</p>
+        <p class="tagline">Creative Writing Student | Fiction | Life Writing | Digital Writing</p>
       </header>
 
       <section class="bio">
-        <!-- edit author bio below -->
+        <h2>About</h2>
         <p>
-          Jimmy Butterfield is a creative writing student with a passion for fiction and life writing. 
-          His work is interested in storytelling that is personal, reflective, and attentive to the complexities 
-          of everyday experience. Through his writing, he explores voice, memory, and the emotional textures of 
-          lived experience. Jimmy is particularly drawn to the ways fiction and life writing can overlap, creating 
-          narratives that feel both intimate and resonant.
+          Jimmy Butterfield is a creative writing student with a passion for fiction, life writing,
+          and digital storytelling. His work is interested in storytelling that is personal,
+          reflective, and attentive to the complexities of everyday experience.
+        </p>
+
+        <p>
+          Through his writing, Jimmy explores voice, memory, humour, identity, and the emotional
+          textures of lived experience. He is particularly drawn to the ways fiction, life writing,
+          and digital forms can overlap, creating narratives that feel both intimate and playful.
         </p>
       </section>
 
       <section class="publications">
-        <h2>Publication History</h2>
-        <!-- edit author publications below, creating new list items -->
+        <h2>Featured Work</h2>
         <ul>
-      <li><a href="https://jimmybutterfield.github.io/digital-writing-twine/">Sexuality Quiz (2025)</a></li>
-
           <li>
-            <a href="./publications.html"
-              >Journal articles and essays (see full list)</a
-            >
+            <a href="https://jimmybutterfield.github.io/digital-writing-twine/">
+              Sexuality Quiz (2025)
+            </a>
+          </li>
+          <li>
+            <a href="./publications.html">View publication history</a>
+          </li>
+          <li>
+            <a href="./gallery.html">View project gallery</a>
           </li>
         </ul>
       </section>
@@ -60,17 +63,18 @@
       <section class="contact">
         <h2>Contact</h2>
         <p>
-          Email: <a href="mailto:jimmy@bfhs.com.au">jimmy@bfhs.com.au</a>
+          Email:
+          <a href="mailto:jimmy@bfhs.com.au">jimmy@bfhs.com.au</a>
         </p>
-        <p>Representation: <a href="#">Unagented</a></p>
+        <p>Representation: Unagented</p>
       </section>
 
       <section class="socials">
         <h2>Follow</h2>
         <p>
-          <a href="https://instagram.com/jimmybutterfield">Instagram</a> |
+          <a href="https://instagram.com/jimmybutterfield">Instagram</a>
         </p>
       </section>
-    </div>
+    </main>
   </body>
 </html>

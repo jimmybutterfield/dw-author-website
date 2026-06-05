@@ -1,36 +1,56 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Journal Articles</title>
-   <link rel="stylesheet" href="./style.css" />
-</head>
-<body>
-  <!-- menu header -->
-<div id="header-placeholder"></div>
-<!-- load header -->
-<script>
-  fetch("header.html")
-    .then(res => res.text())
-    .then(html => {
-      document.getElementById("header-placeholder").innerHTML = html;
-    });
-</script>
-  
-  <div class="container2">
-    <h1>Journal Articles</h1>
-    <div class="article-grid">
-      <div class="article-card">
-<img class="article-image" src="./img/sexuality-quiz.png" alt="Screenshot of Sexuality Quiz" />        <div class="article-content">
-          <h2 class="article-title"><a href="#">Sexuality Quiz</a></h2>
-          <p class="journal-name">Digital Writing</p>
-        </div>
-      </div>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-        </div>
+    <title>Publications | Jimmy Butterfield</title>
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+
+  <body>
+    <!-- menu header -->
+    <div id="header-placeholder"></div>
+
+    <!-- load header -->
+    <script>
+      fetch("header.html")
+        .then((res) => res.text())
+        .then((html) => {
+          document.getElementById("header-placeholder").innerHTML = html;
+        });
+    </script>
+
+    <main class="container2">
+      <h1>Publication History</h1>
+
+      <div class="article-grid">
+        <article class="article-card">
+          <a href="https://jimmybutterfield.github.io/digital-writing-twine/">
+            <img
+              class="article-image"
+              src="./img/quiz.png"
+              alt="Screenshot from Sexuality Quiz"
+            />
+          </a>
+
+          <div class="article-content">
+            <h2 class="article-title">
+              <a href="https://jimmybutterfield.github.io/digital-writing-twine/">
+                Sexuality Quiz
+              </a>
+            </h2>
+
+            <p class="journal-name">Digital Writing Project | 2025</p>
+
+            <p>
+              An interactive digital writing piece that uses the familiar structure of an
+              online quiz to explore identity, humour, sexuality, and the strange authority
+              of internet self-diagnosis.
+            </p>
+          </div>
+        </article>
       </div>
-    </div>
-  </div>
-</body>
+    </main>
+  </body>
 </html>
