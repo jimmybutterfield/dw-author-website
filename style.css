@@ -93,10 +93,7 @@ a:hover {
   max-width: 850px;
   margin: 0 auto 50px auto;
   padding: 35px;
-  background-color: #0b2559;
-  border: 1px solid #7ec8ff;
-  border-radius: 18px;
-  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.3);
+  background-color: #061a40;
 }
 
 .site-intro {
@@ -105,12 +102,14 @@ a:hover {
 }
 
 .site-intro img {
+  display: block;
   width: 160px;
   height: 160px;
   object-fit: cover;
+  object-position: center center;
   border-radius: 50%;
-  border: 3px solid #7ec8ff;
-  margin-bottom: 20px;
+  border: none;
+  margin: 0 auto 30px auto;
 }
 
 .tagline {
@@ -130,10 +129,7 @@ a:hover {
   max-width: 1050px;
   margin: 0 auto 50px auto;
   padding: 35px;
-  background-color: #0b2559;
-  border: 1px solid #7ec8ff;
-  border-radius: 18px;
-  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.3);
+  background-color: #061a40;
 }
 
 .article-grid {
@@ -143,8 +139,8 @@ a:hover {
 }
 
 .article-card {
-  background-color: #102f6b;
-  border: 1px solid #7ec8ff;
+  background-color: #0b2559;
+  border: none;
   border-radius: 14px;
   overflow: hidden;
   transition: transform 0.3s ease, box-shadow 0.3s ease;
@@ -152,7 +148,7 @@ a:hover {
 
 .article-card:hover {
   transform: translateY(-5px);
-  box-shadow: 0 8px 25px rgba(126, 200, 255, 0.25);
+  box-shadow: 0 8px 25px rgba(126, 200, 255, 0.18);
 }
 
 .article-image {
@@ -193,18 +189,15 @@ a:hover {
   max-width: 900px;
   margin: 0 auto 50px auto;
   padding: 35px;
-  background-color: #0b2559;
-  border: 1px solid #7ec8ff;
-  border-radius: 18px;
-  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.3);
+  background-color: #061a40;
 }
 
 .feature-box {
   display: flex;
   flex-direction: column;
   align-items: center;
-  background-color: #102f6b;
-  border: 1px solid #7ec8ff;
+  background-color: #0b2559;
+  border: none;
   border-radius: 16px;
   padding: 30px;
   text-align: center;
@@ -219,9 +212,10 @@ a:hover {
 }
 
 .feature-box h2 {
-  border-bottom: none;
+  border-bottom: 1px solid #7ec8ff;
   margin-top: 0;
   margin-bottom: 15px;
+  width: 100%;
 }
 
 .feature-box p {
